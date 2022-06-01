@@ -1,0 +1,38 @@
+.login-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1600px;
+    margin: 200px auto;
+}
+
+.login-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 400px;
+    background-color: #fff;
+    flex-shrink: 0;
+    margin: auto;
+}
+
+.login-img {
+    width: 400px;
+    font-size: 100px;
+    font-weight: 900;
+    line-height: 300px;
+    color: #f00056;
+    margin: auto;
+    transition: all 0.3s;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 1000px) {
+    .login-img {
+        opacity: 0;
+        margin: 0;
+        width: 0;
+    }
+    .login-content {
+        justify-content: center;
+    }
+}

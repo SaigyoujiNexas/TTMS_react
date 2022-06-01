@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+}
+
+.flex {
+    display: flex;
+}
+
+.movie-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.flex.col-center {
+    align-items: stretch;
+}
+
+.ticket {
+    position: relative;
+    display: block;
+    width: 30px;
+    height: 30px;
+}
+
+.ticket>* {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.ticket.optional {
+    color: #cecece;
+    background-color: #ffffff;
+    border: 1px solid #cecece;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.ticket.optional:hover {
+    border: 1px solid #00aeff;
+}
+
+.ticket-checkbox:checked+.ticket {
+    color: #00eb0c;
+    background-color: #c8ffae;
+    border: 1px solid #00eb0c;
+}
+
+.ticket.disable {
+    color: red;
+    background-color: #ffc2c2;
+    border: 1px solid red;
+    cursor: not-allowed;
+}
+
+.ticket-select-text {
+    float: left;
+    background-color: #f00056;
+    color: #fff;
+    border-radius: 2px;
+    width: 70px;
+    height: 25px;
+    line-height: 25px;
+    margin: 10px 10px 10px 6px;
+    text-align: center;
+}
+
+.select-ticket-box {
+    width: 180px;
+    height: 100px;
+    overflow: auto;
+    margin: 10px auto;
+    scrollbar-width: thin;
+}
+
+.sell-ticket-information {
+    padding: 20px 20px 100px;
+    width: 300px;
+    background-color: #f9f9f9;
+}
+
+.tickets-price {
+    font-size: 20px;
+    font-weight: 600;
+    color: #f00056;
+    margin: 10px 0;
+}
+
+.ticket.selected {
+    background-color: #afe6ff;
+    color: #00aeff;
+    border: 1px solid #00aeff
+}
+
+.ticket-seat-row>label {
+    margin-right: 5px;
+}
+.ticket-seat-row {
+    justify-content: center;
+    position: relative;
+    right: 10px;
+}
+
+.movie-inform-text span {
+    color: #727272;
+}
+
+.screen {
+    position: relative;
+    width: 400px;
+    height: 20px;
+    border: 1px solid #eee;
+    box-shadow: 0 0 10px 0 #eee;
+    margin: auto;
+    left: 15px;
+}

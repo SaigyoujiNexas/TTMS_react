@@ -1,0 +1,65 @@
+.hot-title {
+    color: #f00056;
+    font-size: 25px;
+    font-weight: 700;
+}
+.hot-head {
+    justify-content: space-between;
+}
+.all-link {
+    color: #f00056;
+    font-size: 16px;
+    cursor: pointer;
+}
+.all-link::after {
+    content: ">";
+    color: #f00056;
+}
+.page_content {
+    width: 1200px;
+    margin: 50px auto;
+    display: flex;
+}
+
+.hot-body {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.movie-card-box {
+    width: 160px;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.movie-card-box:hover {
+    box-shadow: 0 0 15px 0 #e7e7e7;
+}
+
+.movie-inform {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    padding: 0 6px;
+    width: 160px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 16px;
+    color: #fff;
+    background: linear-gradient(0deg,#020202d3, #ffffff00);
+    justify-content: space-between;
+}
+
+.movie-rate {
+    font-size: 20px;
+    color: gold;
+}
+
+.movie-box-title {
+    max-width: 100px;
+    overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap
+}
